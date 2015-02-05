@@ -7,17 +7,21 @@
 	<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/angular.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	
+	<script>
+
+		function TestController($scope){
+
+			$scope.section = "bet";//"results"
+		}
+	</script>
 </head>
 
-<body ng-controller="OscarsController" ng-init="initialize()">
+<body ng-controller="TestController">
 
 	<div class="container">
-		<ng-include src="'templates/header.html'"></ng-include>
 
-		<ng-include src="'templates/menu.html'"></ng-include>
-
-		<ng-include src="'templates/content.html'"></ng-include>
+		{{section}}
 
 	</div>
 </body>
