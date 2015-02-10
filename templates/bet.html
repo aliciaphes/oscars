@@ -1,4 +1,27 @@
 
+<!-- <script type="text/ng-template" id="bet.html"> -->
 
-we are displaying {{section}}
+<div>
+	<p>we are displaying {{section}}</p>
 
+	<p>Place your bet!</p>
+
+	<form class="form-horizontal">
+		<div class="form-group" ng-repeat="category in categories">
+			<label for="{{category.id}}" class="control-label col-xs-2">{{category.name}}:</label>
+			<div class="col-xs-4">
+				<input type="text" class="form-control" id="{{category.id}}" placeholder="{{category.value}}">
+			</div>
+		</div>
+
+		<!-- Button -->
+		<div class="form-group">
+			<div class="col-xs-offset-2 col-xs-4">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+
+</div>
+
+<!-- </script> -->

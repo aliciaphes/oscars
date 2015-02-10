@@ -1,9 +1,5 @@
-
-# oscars
-The Oscars are coming
-
 =========
-Porra
+Place your Oscars bet
 =========
 
 Local server instructions:
